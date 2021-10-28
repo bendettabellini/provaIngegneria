@@ -5,6 +5,9 @@ import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
 import java.util.List;
 
+import org.joda.time.DateTime;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -16,6 +19,18 @@ public class MyListUtilTest {
 	public static void metodo() {
 		System.out.println("Before Class");
 		m = new MyListUtil();
+	}
+	
+	@Before
+	public void stampaOra() {
+		DateTime data = new DateTime();
+		System.out.println(data);
+	}
+	
+	@After
+	public void stampaOra2() {
+		DateTime data = new DateTime();
+		System.out.println(data);
 	}
 	
 	@Test
